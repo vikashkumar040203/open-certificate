@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-Certification</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="favicon" href="favicon.ico">
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+
+        <div class="container indigo topLeftBorders">
+            
+            <a href="https://upes-open.org/" class="nav-link" target="_blank">
+                Home
+            </a>
+            <a href="https://upes-open.org/events" class="nav-link" target="_blank">
+                Events
+            </a>
+            <a href="https://upes-open.org/projects" class="nav-link" target="_blank">
+                Projects
+            </a>
+            <a href="index.html" class="nav-link">
+                Certification
+            </a>
+
+            <Button style="background-color: rgb(35, 161, 113); align-items: baseline;">
+                <a href="https://github.com/upes-open/first-contributions" class="nav-link" target="blank">
+                    Start Contributing
+                </a></Button>
+                <a href="https://upes-open.org/" target="blank">
+                    <img alt="open" height="20px" width="10%" style="top: auto;" src="./img/logo.png">
+                </a>
+
+        </div>
+        
+    </header>
+    <main id="main">
+        <h2><b>Get Your<br>Certificate</b></h2>
+        <label for="name"><b></b></label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Enter  Your Name" id="name"
+            minlength="1" maxlength="25">
+        <select onchange="this.form.submit()" id="option" name="option">
+            <option>Select Certificate</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <div class="verify">
+            
+            
+        </div>
+        <Button id="submitBtn"><b>Get Certificate</b></Button>
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./js/FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+
+</html>
